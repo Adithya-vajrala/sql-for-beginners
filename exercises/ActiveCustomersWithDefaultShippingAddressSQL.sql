@@ -1,0 +1,1 @@
+SELECT concat(first_name,' ',last_name) as full_name,email,city from customers c inner join addresses a on c.id = a.customer_id where is_active = true and is_default = true order by full_name ASC;
