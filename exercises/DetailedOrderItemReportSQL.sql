@@ -1,0 +1,2 @@
+-- Write a SQL query below --
+select oi.id as order_id, name as product_name, quantity, round(oi.price,2) as price from order_items oi join products p on oi.product_id = p.id where oi.quantity > 1 order by order_id asc;
